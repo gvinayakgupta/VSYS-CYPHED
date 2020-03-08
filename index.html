@@ -3,9 +3,11 @@
         <title>CYPHED-Provid</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="icon" href="assets/favicon.ico" type="image/ico" size="64X64">
         <link rel="stylesheet" href="assets/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
@@ -52,15 +54,112 @@
             </div>
         </div>
         <div id="try">
+            <div class="heading" data-aos="fade-right" data-aos-duration="2000">Try It Now</div>
+            <div class="container form" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
+                <form onSubmit="LetsCYPH()">
+                    <div class="form-group">
+                        <label for="NoL">Select No. of Encryption Layer</label>
+                        <select class="form-control" id="NoL">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="L1">Select Layer 1</label>
+                        <select class="form-control" id="L1">
+                            <option>Select Your Choice</option>
+                            <option>Caesar Cipher</option>
+                            <option>Railfence</option>
+                            <option>SHA-512</option>
+                            <option>SHA-256</option>
+                            <option>SHA-1</option>
+                            <option>SHA-224</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="L2">Select Layer 2</label>
+                        <select class="form-control" id="L2">
+                            <option>Select Your Choice</option>
+                            <option>Caesar Cipher</option>
+                            <option>Railfence</option>
+                            <option>SHA-512</option>
+                            <option>SHA-256</option>
+                            <option>SHA-1</option>
+                            <option>SHA-224</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="L3">Select Layer 3</label>
+                        <select class="form-control" id="L3">
+                            <option>Select Your Choice</option>
+                            <option>Caesar Cipher</option>
+                            <option>Railfence</option>
+                            <option>SHA-512</option>
+                            <option>SHA-256</option>
+                            <option>SHA-1</option>
+                            <option>SHA-224</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="L4">Select Layer 4</label>
+                        <select class="form-control" id="L4">
+                            <option>Select Your Choice</option>
+                            <option>Caesar Cipher</option>
+                            <option>Railfence</option>
+                            <option>SHA-512</option>
+                            <option>SHA-256</option>
+                            <option>SHA-1</option>
+                            <option>SHA-224</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="L5">Select Layer 5</label>
+                        <select class="form-control" id="L5">
+                            <option>Select Your Choice</option>
+                            <option>Caesar Cipher</option>
+                            <option>Railfence</option>
+                            <option>SHA-512</option>
+                            <option>SHA-256</option>
+                            <option>SHA-1</option>
+                            <option>SHA-224</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="2Bcyphed">Enter Text to be Cyphed</label>
+                        <input type="text" class="form-control" name="2Bcyphed" id="2Bcyphed">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Let's CYPH</button>
+                    <div class="form-group">
+                        <label>CYPHED Value:</label>
+                        <h3 id="cyphed"></h3>
+                    </div>
+                </form>
 
+            </div>
         </div>
         <footer id="cnt">
-
+            <div class="row" style="text-align: center; color: #ffffff;">
+                <div class="col-12 col-md-3"></div>
+                <div class="col-12 col-md-6" style="padding-top: 20px;">
+                    <h4><a href="http://"><span class="fa fa-map-marker"></span> Vellore Institute of Technology, Vellore, Tamil Nadu(IN)</a></h3>
+                    <h4><a href="mailto:info@cyphed.com"><span class="fa fa-envelope"></span> info@cyphed.com</a></h3>
+                    <h4><a href="tel:+91 416 12"><span class="fa fa-phone"></span> +91 416 5645343</a></h3>
+                </div>
+                <div class="col-12 col-md-3"></div>
+            </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init();</script>
+        <script>
+            function LetsCYPH(){
+                document.getElementById('cyphed').innerHTML="DEMO TEXT";
+            }
+        </script>
     </body>
 </html>
