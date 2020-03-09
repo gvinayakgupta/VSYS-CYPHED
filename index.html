@@ -131,10 +131,10 @@
                         <input type="text" class="form-control" name="2Bcyphed" id="2Bcyphed">
                     </div>
                     <button type="submit" class="btn btn-primary">Let's CYPH</button>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label>CYPHED Value:</label>
                         <iframe id="cyphed"></iframe>
-                    </div>
+                    </div> -->
                 </form>
             </div>
         </div>
@@ -171,9 +171,7 @@
                 var e = document.getElementById('2Bcyphed');
                 var ct = e.value;
                 var x = "http://127.0.0.1:5000/"+n+"/"+e1+"/"+e2+"/"+e3+"/"+e4+"/"+e5+"/"+ct;
-                // location.replace(x)
-                var e = document.getElementById('cyphed');
-                e.src=x;
+                location.replace(x)
             }
         </script>
     </body>
